@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".fragments.PatientFormFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="760dp"
+        android:layout_height="550dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="350dp">
+
+        <EditText
+            android:id="@+id/editFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Linda"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="20dp"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/profile_form_edit_text"
+
+            />
+
+        <EditText
+            android:id="@+id/editLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Love"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@id/editFirstName"
+            android:background="@drawable/profile_form_edit_text"/>
+
+
+        <EditText
+            android:id="@+id/editPatientId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="#1234"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@id/editLastName"
+            android:background="@drawable/profile_form_edit_text"/>
+
+        <EditText
+            android:id="@+id/editPatientBirthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="12/17/1990"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@id/editPatientId"
+            android:background="@drawable/profile_form_edit_text"/>
+
+        <EditText
+            android:id="@+id/editPatientPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="1(234)567-8910"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="22dp"
+            app:layout_constraintTop_toBottomOf="@id/editPatientBirthDate"
+            android:background="@drawable/profile_form_edit_text"/>
+
+
+        <EditText
+            android:id="@+id/editPatientEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="lovelylinda@gmail.com"
+            android:gravity="center"
+            android:fontFamily="@font/montserrat_italic"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@id/editPatientPhoneNumber"
+            android:background="@drawable/profile_form_edit_text"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_regular">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="22dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_regular">
+
+        </TextView>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient ID"
+        android:textSize="22dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular">
+
+    </TextView>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DOB"
+        android:textSize="22dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular">
+
+    </TextView>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Phone Number"
+        android:textSize="22dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular">
+
+    </TextView>
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Email"
+        android:textSize="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_regular">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="250dp"
+        android:height="40dp"
+        android:text="EDIT"
+
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginLeft="200dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+
+
+        >
+
+    </Button>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

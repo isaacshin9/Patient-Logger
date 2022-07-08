@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_baseline_home_24"
+
+
+        />
+    <item
+        android:id="@+id/ic_statistics"
+        android:icon="@drawable/ic_baseline_equalizer_24"
+
+        />
+    <item
+        android:id="@+id/ic_profile"
+        android:icon="@drawable/ic_baseline_person_24"
+
+        />
+    <item
+        android:id="@+id/ic_export"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+
+        />
+    <item
+        android:id="@+id/ic_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+
+        />
+
+</menu>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+    <FrameLayout
+        android:id="@+id/profile_page_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/profile_patient_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_page_heading" />
+
+    <FrameLayout
+        android:id="@+id/sensor_management_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_patient_form" />
+
+    <FrameLayout
+        android:id="@+id/sensor_management_container1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sensor_management_container"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/sensor_management_container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sensor_management_container1" />
+
+
+
+
+    <!--
+    <Switch
+        android:id="@+id/sendSwitch2"
+        app:layout_constraintTop_toBottomOf="@+id/sendSwitch"
+        android:text="Sensor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Switch
+        android:id="@+id/sendSwitch3"
+        app:layout_constraintTop_toBottomOf="@+id/sendSwitch2"
+        android:text="Sensor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Switch
+        android:id="@+id/sendSwitch4"
+        app:layout_constraintTop_toBottomOf="@+id/sendSwitch3"
+        android:text="Sensor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+        -->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
